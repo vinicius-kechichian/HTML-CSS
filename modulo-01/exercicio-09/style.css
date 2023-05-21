@@ -1,0 +1,14 @@
+
+body {
+    background-color: rgb(5, 1, 44);
+    color:coral;
+    font-family: arial;
+}
+
+ol,li {
+    color:rgb(182, 130, 61);
+}
+
+dt,dd {
+    color:rgb(184, 131, 46);
+}
