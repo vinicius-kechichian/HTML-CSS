@@ -11,21 +11,34 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         } 
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
         thead, tfoot {
-            background-color: rgba(61, 60, 60, 0.514);
+            background-color: #272727;
             color:rgb(235, 235, 235);
         }
+
+        thead > tr > th {  /* cabeçalho fixo */
+            position: sticky; /* colavel, fixo*/
+            top: -1px;
+            background-color:#272727;
+        }
+
         caption {
             font-size: 1.5em;
             font-weight:bold;
             padding: 10px;
             background-color:rgb(151, 156, 158);
         }
+
+        tbody > tr:nth-child(2n) { /* efeito zebrado*/
+            background-color: gray;
+        }
+
         td.num {
             text-align: right;
         }
@@ -49,8 +62,9 @@
         <caption>Populção das Unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width:
+                 50px">População</th>
             </tr>
         </thead>
         <tbody>
@@ -66,13 +80,193 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">17 261 943</td>
             </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">17 261 943</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Santos</td>
+                <td class="num">17 261 943</td>
+            </tr>
+            <tr>
+                <td>São Vicente</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Macéio</td>
+                <td class="num">17 261 943</td>
+            </tr>
+            <tr>
+                <td>São José do Rio Preto</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Curitiba</td>
+                <td class="num">17 261 943</td>
+            </tr>
+            <tr>
+                <td>Porto Seguro</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 261 943</td>
+            </tr>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">17 261 943</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Cianorte</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Maringa</td>
+                <td class="num">17 261 943</td>
+            </tr>
+            <tr>
+                <td>Rolandia</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Londrina</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Sertanópolis</td>
+                <td class="num">17 261 943</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>105.25021.015</td>
             </tr>
         </tfoot>
     </table>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium enim quam debitis, tenetur molestias impedit porro accusantium
+         eum ipsa sed quasi vel eveniet alias eos nam repellendus fuga? Architecto, pariatur?
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo possimus, sequi officia voluptatem, atque repellendus voluptates
+         unde labore nobis mollitia illum molestias? Ipsam voluptates ad, impedit similique a vitae hic.
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur facere praesentium ipsam laboriosam tempore aperiam. Fugit omnis repudiandae
+         tempore! Dolorem dolor ea amet recusandae, enim nesciunt voluptatibus eos voluptas facere.
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quisquam quaerat, vitae debitis vero earum ducimus?
+         Ad facere officia laboriosam rerum error architecto nostrum expedita consequatur vero ut. Vitae, amet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe harum voluptate ducimus nisi consequatur omnis eligendi similique, libero
+         dolores iusto inventore? Est, eum debitis? Blanditiis illum aspernatur rerum debitis perspiciatis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium enim quam debitis, tenetur molestias impedit porro accusantium
+         eum ipsa sed quasi vel eveniet alias eos nam repellendus fuga? Architecto, pariatur?
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo possimus, sequi officia voluptatem, atque repellendus voluptates
+         unde labore nobis mollitia illum molestias? Ipsam voluptates ad, impedit similique a vitae hic.
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur facere praesentium ipsam laboriosam tempore aperiam. Fugit omnis repudiandae
+         tempore! Dolorem dolor ea amet recusandae, enim nesciunt voluptatibus eos voluptas facere.
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quisquam quaerat, vitae debitis vero earum ducimus?
+         Ad facere officia laboriosam rerum error architecto nostrum expedita consequatur vero ut. Vitae, amet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe harum voluptate ducimus nisi consequatur omnis eligendi similique, libero
+         dolores iusto inventore? Est, eum debitis? Blanditiis illum aspernatur rerum debitis perspiciatis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium enim quam debitis, tenetur molestias impedit porro accusantium
+         eum ipsa sed quasi vel eveniet alias eos nam repellendus fuga? Architecto, pariatur?
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo possimus, sequi officia voluptatem, atque repellendus voluptates
+         unde labore nobis mollitia illum molestias? Ipsam voluptates ad, impedit similique a vitae hic.
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur facere praesentium ipsam laboriosam tempore aperiam. Fugit omnis repudiandae
+         tempore! Dolorem dolor ea amet recusandae, enim nesciunt voluptatibus eos voluptas facere.
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quisquam quaerat, vitae debitis vero earum ducimus?
+         Ad facere officia laboriosam rerum error architecto nostrum expedita consequatur vero ut. Vitae, amet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe harum voluptate ducimus nisi consequatur omnis eligendi similique, libero
+         dolores iusto inventore? Est, eum debitis? Blanditiis illum aspernatur rerum debitis perspiciatis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium enim quam debitis, tenetur molestias impedit porro accusantium
+         eum ipsa sed quasi vel eveniet alias eos nam repellendus fuga? Architecto, pariatur?
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo possimus, sequi officia voluptatem, atque repellendus voluptates
+         unde labore nobis mollitia illum molestias? Ipsam voluptates ad, impedit similique a vitae hic.
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur facere praesentium ipsam laboriosam tempore aperiam. Fugit omnis repudiandae
+         tempore! Dolorem dolor ea amet recusandae, enim nesciunt voluptatibus eos voluptas facere.
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quisquam quaerat, vitae debitis vero earum ducimus?
+         Ad facere officia laboriosam rerum error architecto nostrum expedita consequatur vero ut. Vitae, amet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe harum voluptate ducimus nisi consequatur omnis eligendi similique, libero
+         dolores iusto inventore? Est, eum debitis? Blanditiis illum aspernatur rerum debitis perspiciatis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium enim quam debitis, tenetur molestias impedit porro accusantium
+         eum ipsa sed quasi vel eveniet alias eos nam repellendus fuga? Architecto, pariatur?
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo possimus, sequi officia voluptatem, atque repellendus voluptates
+         unde labore nobis mollitia illum molestias? Ipsam voluptates ad, impedit similique a vitae hic.
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur facere praesentium ipsam laboriosam tempore aperiam. Fugit omnis repudiandae
+         tempore! Dolorem dolor ea amet recusandae, enim nesciunt voluptatibus eos voluptas facere.
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quisquam quaerat, vitae debitis vero earum ducimus?
+         Ad facere officia laboriosam rerum error architecto nostrum expedita consequatur vero ut. Vitae, amet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe harum voluptate ducimus nisi consequatur omnis eligendi similique, libero
+         dolores iusto inventore? Est, eum debitis? Blanditiis illum aspernatur rerum debitis perspiciatis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium enim quam debitis, tenetur molestias impedit porro accusantium
+         eum ipsa sed quasi vel eveniet alias eos nam repellendus fuga? Architecto, pariatur?
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo possimus, sequi officia voluptatem, atque repellendus voluptates
+         unde labore nobis mollitia illum molestias? Ipsam voluptates ad, impedit similique a vitae hic.
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur facere praesentium ipsam laboriosam tempore aperiam. Fugit omnis repudiandae
+         tempore! Dolorem dolor ea amet recusandae, enim nesciunt voluptatibus eos voluptas facere.
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quisquam quaerat, vitae debitis vero earum ducimus?
+         Ad facere officia laboriosam rerum error architecto nostrum expedita consequatur vero ut. Vitae, amet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe harum voluptate ducimus nisi consequatur omnis eligendi similique, libero
+         dolores iusto inventore? Est, eum debitis? Blanditiis illum aspernatur rerum debitis perspiciatis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium enim quam debitis, tenetur molestias impedit porro accusantium
+         eum ipsa sed quasi vel eveniet alias eos nam repellendus fuga? Architecto, pariatur?
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo possimus, sequi officia voluptatem, atque repellendus voluptates
+         unde labore nobis mollitia illum molestias? Ipsam voluptates ad, impedit similique a vitae hic.
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur facere praesentium ipsam laboriosam tempore aperiam. Fugit omnis repudiandae
+         tempore! Dolorem dolor ea amet recusandae, enim nesciunt voluptatibus eos voluptas facere.
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quisquam quaerat, vitae debitis vero earum ducimus?
+         Ad facere officia laboriosam rerum error architecto nostrum expedita consequatur vero ut. Vitae, amet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe harum voluptate ducimus nisi consequatur omnis eligendi similique, libero
+         dolores iusto inventore? Est, eum debitis? Blanditiis illum aspernatur rerum debitis perspiciatis.
+    </p>
 </body>
 </html>
