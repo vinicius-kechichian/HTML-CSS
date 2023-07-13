@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulário</title>
+</head>
+<body>
+    <h1>Exemplos de formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+    <label for="inum">Número de satisfação:</label>
+
+    <input type="range" name="num" id="inum" 
+    oninput="ivalor.innerHTML = Number(inum.value)">
+    
+    <output id="ivalor">5</output>
+    </form>
+</body>
+</html>

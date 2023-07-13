@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            background-color: rgb(51, 30, 26);
+            color:yellowgreen;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+    <p>
+        <label for="iestado">Estados:</label>
+        <select name="estado" id="iestado">
+            
+            <option value="" selected>--Escolha--</option>
+            <!--selected, usado para deixar como primeira opção-->
+            <optgroup label="Região Sudeste"> <!-- label="", de atributo-->
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option> 
+                <option value="PR">Paraná</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste"> <!--label="", de atributos-->
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande do Sul</option>
+            </optgroup>
+        </select>
+    </p>
+
+    <p>
+        <label for="iprof">Profissão: </label>
+        <input type="text" name="profissao" id="iprof" list="lista"> <!-- list="", para mostrar as opçoes de lista -->
+        <datalist id="lista">
+            <option value="ADM">Admistração</option>
+            <option value="DEV">Desenvolvedor</option>
+            <option value="PROF">Professor</option>
+            <option value="Vendedor">Vendedor</option>
+        </datalist>
+    </p>
+
+    <p>
+        <label for="imgs">Mensagem:</label><br/>
+        <textarea name="mensagem" id="imgs" cols="30" rows="10"></textarea>
+        <!-- textarea, deve ser sempre usado no method="POST" -->
+    </p>
+    
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset"  value="Limpar">
+    </p>
+</form>
+</body>
+</html>
